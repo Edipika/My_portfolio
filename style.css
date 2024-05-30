@@ -5,7 +5,9 @@
 .box {
   position: relative;
   height: 60vh;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
+  
+
 }
 
 /* #A16984 */
@@ -40,6 +42,9 @@ ul {
   text-align: right;
   margin-right: 73px;
 }
+a{
+  color:whitesmoke;
+}
 
 li {
   display: inline-block;
@@ -56,12 +61,19 @@ nav {
 }
 
 .box1 {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
   z-index: 2;
-  margin-top: 10%;
-  padding-left: 49%;
+  margin-left: 30%;
+  margin-top: 4%;
+  text-align: center;
+  color: whitesmoke;
 }
-
+.h3 {
+  margin-top: 9px;
+}
 button {
   border-radius: 30px;
   padding: 15px 25px;
@@ -73,7 +85,7 @@ button {
 .skilldiv {
   display: flex;
   justify-content: space-around;
-  margin-top: 3%;
+  margin-top: 1%;
   
 
 }
@@ -81,8 +93,9 @@ button {
 .skill {
   border-radius: 50%;
   background-color: #A16984;
-  padding: 40px;
+  padding: 35px;
   border: 4px solid #935874;
+  color:whitesmoke;
 }
 
 .myskill {
@@ -92,4 +105,28 @@ button {
   align-items: center;  
   font-size: 30px;
   font-weight: 600;
+}
+
+.about-me-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.about-me-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.decorative-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.line {
+  height: 1px;
+  border-top: 1px dotted #2b2727;
+  flex-grow: 1;
+  margin: 0 10px;
 }
