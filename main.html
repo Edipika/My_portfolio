@@ -15,9 +15,9 @@
 
 <body>
   <div class="box">
-    <div class="overlay">
-      <div class="colour_overlay"></div>
-    </div>
+    <div class="overlay"> </div>
+    <div class="colour_overlay"></div>
+
     <nav>
       <ul>
         <li><a href="">home</a></li>
@@ -27,8 +27,21 @@
         <li><a href="">home</a></li>
       </ul>
     </nav>
-  
+    <div class="box1">
+      <button>Download CV</button>
+    </div>
   </div>
+
+<div class="myskill">My Skills</div>
+
+  <div class="skilldiv">
+    <div class="skill">skill</div>
+    <div class="skill">skill</div>
+    <div class="skill">skill</div>
+    <div class="skill">skill</div>
+    <div class="skill">skill</div>
+  </div>
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -40,6 +53,27 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script>
+    const button = document.querySelector("button");
+    button.addEventListener("click", changestyle);
+    function changestyle() {
+      // button.style.color = "black";
+      // button.style.outline = "none";
+      $('button').css({
+        'color': 'black',
+        'outline': 'none'
+      });
+    }
+
+    $(document).ready(function () {
+      $('#media').carousel({
+        pause: true,
+        interval: false,
+      });
+    });
+
+  </script>
+
 </body>
 
 </html>
