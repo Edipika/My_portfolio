@@ -125,6 +125,7 @@ button {
   justify-content: center;
   width: 232px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 
@@ -152,21 +153,49 @@ button {
   height:15px
 }
 .about_master{
-  display: flex;
-  flex-direction: row;
+  margin-top: 48px;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(300px, auto);
+  align-items: center;
   justify-content: center;
-  width: 100%;
-  PADDing: 3%;
-  padding-left: 10%;
-  padding-right: 10%;
+
 
 }
 .about_div{
-  padding:6%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 9%;
+  padding-right: 20%;
+ 
 
 }
-.about_pick{
-  padding:3%;
+.about_img{
+  align-self: center; /* Centers the image vertically within its grid cell */
+  justify-self: center; 
+  height: 327px;
+  width: 390px;
+}
+.projects{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: auto;
+  height:auto;
+  /* background-color: aqua; */
+
+}
+.courousal{
+  position:relative;
+  padding:1%;
+}
+.project_img{
+  height: 227px;
+  width: 370px;
+}
+.contact{
+  display:grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+
 }
